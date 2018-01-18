@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
-
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 body {
   background-color: #f7f7f7;
-  font-family: 'Merriweather', serif;
+  font-family: 'Oxygen', sans-serif;
   /*font-family: "Open Sans";*/
   margin: 0;
 }
@@ -36,8 +36,9 @@ body {
 }
 
 .banner__title h1 {
-  font-weight: lighter;
-  font-size: 2.5rem;
+  border-bottom: 1px solid #e9d9c4;
+  text-transform: uppercase;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -47,17 +48,16 @@ body {
 }
 
 .banner__img img {
-  height: 256px;
-  margin: .8rem;
+  height: 310px;
+  margin: .2rem;
   object-fit: cover;
-  width: 336px;
+  width: 530px;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  text-align: right;
 }
 
 .content p {
@@ -69,8 +69,8 @@ body {
 }
 
 .content-left {
-  width: 70%;
-  text-align: center;
+  width: 65%;
+  text-align: right;
 }
 
 .content-left__head {
@@ -84,30 +84,38 @@ body {
 }
 
 .content-left__container {
-  padding: 1rem .5rem 2rem 7.3rem;
+  padding: 1rem 1.3rem 2rem 7.3rem;
 }
 
 .content-left__container img {
-  width: 806px;
-  height: 538px;
-}
-
-.content-left__container p {
-  text-align: left;
+  width: 681px;
+  height: 562px;
 }
 
 .content-right {
-  width: 30%;
-  text-align: center;
+  width: 35%;
+}
+
+.content-right__btn {
+  margin-left: 6rem;
+}
+
+.content-right__btn a {
+    position: relative;
+    top: -5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .content-right__container {
-  padding: 1rem 6.3rem 2rem .5rem;
+  padding: 1rem 7.3rem 2rem 1rem;
 }
 
 .content-right__container img {
-  width: 295px;
-  height: 202px;
+  width: 259px;
+  height: 231px;
 }
 
 .content-right__container p {
