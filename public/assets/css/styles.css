@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 body {
-  background-color: #f7f7f7;
   font-family: 'Oxygen', sans-serif;
   /*font-family: "Open Sans";*/
   margin: 0;
@@ -10,7 +9,7 @@ body {
 
 .header {
   /*outline: 1px solid red;*/
-  border-bottom: 3px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
   display: flex;
   justify-content: space-between;
   padding: .9rem;
@@ -32,11 +31,11 @@ body {
 }
 
 .banner {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .banner__title h1 {
-  border-bottom: 1px solid #e9d9c4;
+  /*border-bottom: 1px solid #e9d9c4;*/
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -48,15 +47,15 @@ body {
 }
 
 .banner__img img {
-  height: 310px;
-  margin: .2rem;
+  height: 511px;
+  border: 4px solid white;
   object-fit: cover;
-  width: 530px;
+  width: 901px;
 }
 
 .content {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: center;*/
   padding: 2rem 0;
 }
 
@@ -69,7 +68,7 @@ body {
 }
 
 .content-left {
-  width: 65%;
+  width: 69%;
   text-align: right;
 }
 
@@ -83,17 +82,18 @@ body {
   padding: .5rem 1.2rem;
 }
 
-.content-left__container {
-  padding: 1rem 1.3rem 2rem 7.3rem;
+.content-left__img {
+  /*padding: 1rem 1.3rem 2rem 7.3rem;*/
 }
 
-.content-left__container img {
-  width: 681px;
-  height: 562px;
+.content-left__img img {
+  width: 749px;
+  height: 511px;
 }
 
 .content-right {
-  width: 35%;
+  width: 31%;
+  margin-left: 4rem;
 }
 
 .content-right__btn {
@@ -110,14 +110,59 @@ body {
 }
 
 .content-right__container {
-  padding: 1rem 7.3rem 2rem 1rem;
+  /*padding: 1rem 7.3rem 2rem 1rem;*/
+  width: 269px;
+  text-align: center;
 }
 
 .content-right__container img {
-  width: 259px;
-  height: 231px;
+  width: 269px;
+  height: 221px;
+  padding-top: 1.3rem;
 }
 
 .content-right__container p {
-  text-align: left;
+}
+
+.content-right__icons a {
+  color: #c49b5f;
+  padding: 0 .6rem;
+}
+
+.content-right__subscribe {
+  background-color: #f1f1f1;
+  height: 166px;
+  margin: 2rem 0;
+  width: 275px;
+  border: 0;
+}
+
+.content-right__subscribe p {
+  font-style: italic;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0 0;
+  text-align: center;
+}
+
+.content-right__subscribe input {
+  width: 225px;
+  height: 28px;
+  margin: 0 0 .5rem 1.4rem ;
+}
+
+.content-right__button {
+  background-color: black;
+  width: 228px;
+  height: 33px;
+  text-align: center;
+  margin-left: 1.4rem;
+}
+
+.content-right__button a {
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  position: relative;
+  top: 6px;
 }
