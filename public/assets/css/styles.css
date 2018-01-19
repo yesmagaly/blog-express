@@ -145,13 +145,17 @@ body {
   margin-left: 4rem;
 }
 
-.content-right__btn {
+.content-right__first {
+  margin-bottom: 4rem;
+}
+
+.content-right__title {
   margin-left: 6rem;
 }
 
-.content-right__btn a {
+.content-right__title h3 {
     position: relative;
-    top: -5px;
+    top: -18px;
     color: black;
     text-transform: uppercase;
     font-size: .9rem;
@@ -167,7 +171,6 @@ body {
 .content-right__container img {
   width: 269px;
   height: 221px;
-  padding-top: 1.3rem;
 }
 
 .content-right__container p {
@@ -181,7 +184,7 @@ body {
 .content-right__subscribe {
   background-color: #f1f1f1;
   height: 166px;
-  margin: 2rem 0;
+  margin: 3rem 0;
   width: 275px;
   border: 0;
 }
@@ -214,4 +217,16 @@ body {
   font-size: .8rem;
   position: relative;
   top: 6px;
+}
+
+.content-right__instagram {
+
+}
+
+.content-right__img img {
+  height: 83px;
+  border: 4px solid white;
+  object-fit: cover;
+  width: 84px;
+  margin: 0;
 }
