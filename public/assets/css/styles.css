@@ -245,8 +245,8 @@ body {
   height: 275px;
 }
 
-.content-right__user {
-
+.content-right__post {
+  margin-bottom: 4rem;
 }
 
 .content-right__user {
@@ -280,4 +280,10 @@ body {
   border: .7px dashed #e8e8e8;
   width: 275px;
   margin: 1rem 0;
+}
+
+.content-right__categories input {
+  width: 255px;
+  height: 28px;
+  padding: 0 1rem;
 }
