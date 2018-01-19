@@ -223,6 +223,11 @@ body {
   margin-bottom: 4rem;
 }
 
+.content-right__img {
+  width: 275px;
+  display: flex;
+}
+
 .content-right__img img {
   height: 83px;
   border: 4px solid white;
@@ -235,7 +240,44 @@ body {
   margin-bottom: 4rem;
 }
 
-.content-right__photo img {
+.content-right__picture img {
   width: 275px;
   height: 275px;
+}
+
+.content-right__user {
+
+}
+
+.content-right__user {
+  display: flex;
+}
+
+.content-right__photo img {
+  height: 75px;
+  border: 4px solid white;
+  object-fit: cover;
+  width: 91px;
+}
+
+.content-right__content {
+  margin-left: 1rem;
+}
+
+.content-right__content h4 {
+  margin: 0;
+  position: relative;
+  top: 6px;
+  font-size: .78rem;
+}
+
+.content-right__content p {
+  color: #afadab;
+  font-size: .77rem;
+}
+
+.content-right__border {
+  border: .7px dashed #e8e8e8;
+  width: 275px;
+  margin: 1rem 0;
 }
