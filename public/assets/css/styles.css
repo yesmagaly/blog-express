@@ -220,7 +220,7 @@ body {
 }
 
 .content-right__instagram {
-
+  margin-bottom: 4rem;
 }
 
 .content-right__img img {
@@ -229,4 +229,13 @@ body {
   object-fit: cover;
   width: 84px;
   margin: 0;
+}
+
+.content-right__banner {
+  margin-bottom: 4rem;
+}
+
+.content-right__photo img {
+  width: 275px;
+  height: 275px;
 }
