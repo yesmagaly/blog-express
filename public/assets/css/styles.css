@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-.header {
+.nav {
   /*outline: 1px solid red;*/
   border-bottom: 1px solid #f1f1f1;
   display: flex;
@@ -15,7 +15,7 @@ body {
   padding: .9rem;
 }
 
-.header__menu {
+.nav__menu {
   /*outline: 1px solid blue;*/
   display: flex;
   text-transform: uppercase;
@@ -23,22 +23,35 @@ body {
   font-weight: 700;
 }
 
-.header__menu a {
+.nav__menu a {
   /*outline: 1px solid green;*/
   color: #858585;
   padding: 0 1.5rem 0 1rem;
   text-decoration: none;
 }
 
-.banner {
+.header {
   margin-bottom: 3rem;
 }
 
-.banner__title h1 {
+.header__title {
   /*border-bottom: 1px solid #e9d9c4;*/
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+}
+
+.header__title::after {
+  content: ' ';
+  border-bottom: 1px solid red;
+  display: block;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.banner {
+  margin-bottom: 4rem;
+  overflow: hidden;
 }
 
 .banner__img {
@@ -53,10 +66,17 @@ body {
   width: 901px;
 }
 
+.container {
+  outline: 1px solid yellow;
+}
+
 .content {
+  outline: 1px solid blue;
   display: flex;
-  /*justify-content: center;*/
-  padding: 2rem 0;
+  width: 1080px;
+  margin: 0 auto;
+  justify-content: space-between;
+  /*padding: 2rem 0;*/
 }
 
 .content p {
@@ -68,55 +88,54 @@ body {
 }
 
 .content-left {
-  width: 69%;
+  outline: 1px solid orange;
+  width: 70%;
 }
 
-.content-left__first {
+.article {
 }
 
-.content-left__img {
+.article__img {
   text-align: right;
   /*padding: 1rem 1.3rem 2rem 7.3rem;*/
 }
 
-.content-left__img img {
-  width: 749px;
+.article__img img {
+  width: 100%;
   height: 511px;
 }
 
-.content-left__container {
+.article__container {
   margin: 3.5rem 0;
-  width: 749px;
-  margin-left: 9rem;
   text-align: center;
 }
 
-.content-left__category {
+.article__category {
   color: #c49b5f;
   font-style: italic;
   font-size: .85rem;
   font-weight: 600;
 }
 
-.content-left__container h2 {
+.article__container h2 {
   text-transform: uppercase;
   font-size: 600;
   margin: .5rem;
 }
 
-.content-left__container span {
+.article__container span {
   color: #afadab;
   font-size: .8rem;
   font-weight: 500;
 }
 
-.content-left__body {
+.article__body {
   color: #4b4a47;
   font-size: .95rem;
   margin-bottom: 3rem;
 }
 
-.content-left__btn a {
+.article__btn a {
   background-color: #c49b5f;
   color: white;
   font-size: .75rem;
@@ -124,16 +143,16 @@ body {
   text-transform: uppercase;
 }
 
-.content-left__border {
+.article__border {
   border: .9px dashed #e8e8e8;
   margin: 3rem 0 1rem 0;
 }
 
-.content-left__icons {
+.article__icons {
   margin-top: 2rem;
 }
 
-.content-left__icons a {
+.article__icons a {
   border: 1px solid #e4e4e4;
   border-radius: 15px;
   color: #e4e4e4;
@@ -141,19 +160,19 @@ body {
 }
 
 .content-right {
-  width: 31%;
-  margin-left: 4rem;
+  outline: 1px solid green;
+  width: 25%;
 }
 
-.content-right__first {
+.about-me__first {
   margin-bottom: 4rem;
 }
 
-.content-right__title {
+.about-me__title {
   margin-left: 6rem;
 }
 
-.content-right__title h3 {
+.about-me__title h3 {
     position: relative;
     top: -18px;
     color: black;
@@ -162,26 +181,26 @@ body {
     font-weight: 600;
 }
 
-.content-right__container {
+.about-me__container {
   /*padding: 1rem 7.3rem 2rem 1rem;*/
   width: 269px;
   text-align: center;
 }
 
-.content-right__container img {
+.about-me__container img {
   width: 269px;
   height: 221px;
 }
 
-.content-right__container p {
+.about-me__container p {
 }
 
-.content-right__icons a {
+.about-me__icons a {
   color: #c49b5f;
   padding: 0 .6rem;
 }
 
-.content-right__subscribe {
+.newsletter {
   background-color: #f1f1f1;
   height: 166px;
   margin: 3rem 0;
@@ -189,7 +208,7 @@ body {
   border: 0;
 }
 
-.content-right__subscribe p {
+.newsletter p {
   font-style: italic;
   font-size: .85rem;
   font-weight: 600;
@@ -197,13 +216,13 @@ body {
   text-align: center;
 }
 
-.content-right__subscribe input {
+.newsletter input {
   width: 225px;
   height: 28px;
   margin: 0 0 .5rem 1.4rem ;
 }
 
-.content-right__button {
+.newsletter__button {
   background-color: black;
   width: 228px;
   height: 33px;
@@ -211,7 +230,7 @@ body {
   margin-left: 1.4rem;
 }
 
-.content-right__button a {
+.newsletter a {
   color: white;
   text-transform: uppercase;
   font-size: .8rem;
@@ -219,16 +238,16 @@ body {
   top: 6px;
 }
 
-.content-right__instagram {
+.instagram {
   margin-bottom: 4rem;
 }
 
-.content-right__img {
+.instagram__img {
   width: 275px;
   display: flex;
 }
 
-.content-right__img img {
+.instagram__img img {
   height: 83px;
   border: 4px solid white;
   object-fit: cover;
@@ -236,53 +255,53 @@ body {
   margin: 0;
 }
 
-.content-right__banner {
+.advertisement {
   margin-bottom: 4rem;
 }
 
-.content-right__picture img {
+.advertisement__picture img {
   width: 275px;
   height: 275px;
 }
 
-.content-right__post {
+.popular-posts {
   margin-bottom: 4rem;
 }
 
-.content-right__user {
+.popular-post {
   display: flex;
 }
 
-.content-right__photo img {
+.popular-post__photo img {
   height: 75px;
   border: 4px solid white;
   object-fit: cover;
   width: 91px;
 }
 
-.content-right__content {
+.popular-post__content {
   margin-left: 1rem;
 }
 
-.content-right__content h4 {
+.popular-post__content h4 {
   margin: 0;
   position: relative;
   top: 6px;
   font-size: .78rem;
 }
 
-.content-right__content p {
+.popular-post__content p {
   color: #afadab;
   font-size: .77rem;
 }
 
-.content-right__border {
+.popular-post__border {
   border: .7px dashed #e8e8e8;
   width: 275px;
   margin: 1rem 0;
 }
 
-.content-right__categories input {
+.categories input {
   width: 255px;
   height: 28px;
   padding: 0 1rem;
