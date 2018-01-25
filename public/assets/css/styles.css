@@ -386,7 +386,13 @@ body {
   text-align: center;
 }
 
-.footer__photos {
+.footer__title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer__title h3 {
+  font-size: .87rem;
 }
 
 .footer__photos img {
@@ -400,12 +406,15 @@ body {
 }
 
 .footer__icons a {
+  border-radius: 50%;
   color: #050505;
+  display: inline-block;
   margin-left: 1.5rem;
-}
-
-.footer__icons i {
+  width: 35px;
+  height: 35px;
+  padding: .2rem;
+  line-height: 32px;
+  text-align: center;
+  font-size: 1rem;
   border: .5px solid #afadab;
-  border-radius: 15px;
-  padding: .3rem .5rem;
 }
