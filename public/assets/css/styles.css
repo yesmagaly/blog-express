@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
 body {
   font-family: 'Oxygen', sans-serif;
-  /*font-family: "Open Sans";*/
   margin: 0;
 }
 
+/**
+ * Navigation styles
+ */
 .nav {
   border-bottom: 1px solid #f1f1f1;
 }
@@ -30,12 +33,15 @@ body {
   text-decoration: none;
 }
 
+/**
+ * Header styles
+ */
+
 .header {
   margin-bottom: 3rem;
 }
 
 .header__title {
-  /*border-bottom: 1px solid #e9d9c4;*/
   text-transform: uppercase;
   font-size: 2.4rem;
   text-align: center;
@@ -49,6 +55,9 @@ body {
   margin: 0 auto;
 }
 
+/**
+ * Banner componet styles
+ */
 .banner {
   margin-bottom: 4rem;
   overflow: hidden;
@@ -66,6 +75,9 @@ body {
   width: 901px;
 }
 
+/**
+ * Grid styles
+ */
 .container {
 }
 
@@ -74,30 +86,28 @@ body {
   width: 1080px;
   margin: 0 auto;
   justify-content: space-between;
-  /*padding: 2rem 0;*/
-}
-
-.content p {
-  line-height: 1.8;
-}
-
-.content a {
-  text-decoration: none;
 }
 
 .content-left {
   width: 70%;
 }
 
+.content-right {
+  width: 25%;
+}
+
+/**
+ * Article styles
+ */
 .article {
 }
 
 .article__img {
   text-align: right;
-  /*padding: 1rem 1.3rem 2rem 7.3rem;*/
 }
 
 .article__img img {
+  object-fit: cover;
   width: 100%;
   height: 511px;
 }
@@ -129,6 +139,7 @@ body {
 .article__body {
   color: #4b4a47;
   font-size: .95rem;
+  line-height: 1.8;
   margin-bottom: 3rem;
 }
 
@@ -137,6 +148,7 @@ body {
   color: white;
   font-size: .75rem;
   padding: .7rem 1.2rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -156,14 +168,9 @@ body {
   padding: .3rem .6rem;
 }
 
-.content-right {
-  width: 25%;
-}
-
-.about-me__first {
-  margin-bottom: 4rem;
-}
-
+/**
+ * Block component styles
+ */
 .block__title {
   position: relative;
   text-align: center;
@@ -195,8 +202,11 @@ body {
   z-index: 0;
 }
 
+/**
+ * About me componet styles
+ */
 .about-me {
-  /*padding: 1rem 7.3rem 2rem 1rem;*/
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -213,6 +223,9 @@ body {
   padding: 0 .6rem;
 }
 
+/**
+ * Newsletter component styles
+ */
 .newsletter {
   background-color: #f1f1f1;
   height: 166px;
@@ -244,12 +257,16 @@ body {
 
 .newsletter a {
   color: white;
-  text-transform: uppercase;
   font-size: .8rem;
   position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
   top: 6px;
 }
 
+/**
+ * Instagram component styles
+ */
 .instagram {
   margin-bottom: 4rem;
 }
@@ -266,6 +283,9 @@ body {
   margin: 0;
 }
 
+/**
+ * Advertisement component styles
+ */
 .advertisement {
   margin-bottom: 4rem;
 }
@@ -275,6 +295,9 @@ body {
   height: 275px;
 }
 
+/**
+ * Popular posts component styles
+ */
 .popular-posts {
   margin-bottom: 4rem;
 }
@@ -312,6 +335,9 @@ body {
   margin: 1rem 0;
 }
 
+/**
+ * Categories component styles
+ */
 .categories {
 }
 
@@ -322,6 +348,9 @@ body {
   padding: 0 1rem;
 }
 
+/**
+ * Older button styles
+ */
 .older-btn {
   text-align: center;
   padding-bottom: 7rem;
@@ -342,6 +371,9 @@ body {
   top: 5px;
 }
 
+/**
+ * Footer styles
+ */
 .footer {
   background-color: #f1f1f1;
   padding: 4rem 0 2rem 0;
