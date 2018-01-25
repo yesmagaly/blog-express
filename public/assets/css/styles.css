@@ -8,15 +8,16 @@ body {
 }
 
 .nav {
-  /*outline: 1px solid red;*/
   border-bottom: 1px solid #f1f1f1;
-  display: flex;
+}
+
+.content--nav {
   justify-content: space-between;
   padding: .9rem;
+
 }
 
 .nav__menu {
-  /*outline: 1px solid blue;*/
   display: flex;
   text-transform: uppercase;
   font-size: .75rem;
@@ -24,7 +25,6 @@ body {
 }
 
 .nav__menu a {
-  /*outline: 1px solid green;*/
   color: #858585;
   padding: 0 1.5rem 0 1rem;
   text-decoration: none;
@@ -37,13 +37,13 @@ body {
 .header__title {
   /*border-bottom: 1px solid #e9d9c4;*/
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
 .header__title::after {
   content: ' ';
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #c49b5f;
   display: block;
   width: 10rem;
   margin: 0 auto;
@@ -67,11 +67,9 @@ body {
 }
 
 .container {
-  outline: 1px solid yellow;
 }
 
 .content {
-  outline: 1px solid blue;
   display: flex;
   width: 1080px;
   margin: 0 auto;
@@ -88,7 +86,6 @@ body {
 }
 
 .content-left {
-  outline: 1px solid orange;
   width: 70%;
 }
 
@@ -160,7 +157,6 @@ body {
 }
 
 .content-right {
-  outline: 1px solid green;
   width: 25%;
 }
 
@@ -168,27 +164,44 @@ body {
   margin-bottom: 4rem;
 }
 
-.about-me__title {
-  margin-left: 6rem;
+.block__title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.6rem;
 }
 
-.about-me__title h3 {
-    position: relative;
-    top: -18px;
-    color: black;
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 600;
+.block__title h3 {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
 }
 
-.about-me__container {
+.block__title::after {
+  border-bottom: 1px solid #c49b5f;
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 8.5px;
+  z-index: 0;
+}
+
+.about-me {
   /*padding: 1rem 7.3rem 2rem 1rem;*/
-  width: 269px;
   text-align: center;
 }
 
-.about-me__container img {
-  width: 269px;
+.about-me img {
+  width: 271px;
   height: 221px;
 }
 
@@ -204,7 +217,6 @@ body {
   background-color: #f1f1f1;
   height: 166px;
   margin: 3rem 0;
-  width: 275px;
   border: 0;
 }
 
@@ -243,7 +255,6 @@ body {
 }
 
 .instagram__img {
-  width: 275px;
   display: flex;
 }
 
@@ -260,7 +271,7 @@ body {
 }
 
 .advertisement__picture img {
-  width: 275px;
+  width: 271px;
   height: 275px;
 }
 
@@ -297,12 +308,16 @@ body {
 
 .popular-post__border {
   border: .7px dashed #e8e8e8;
-  width: 275px;
+  width: 100%;
   margin: 1rem 0;
 }
 
+.categories {
+}
+
 .categories input {
-  width: 255px;
+  box-sizing: border-box;
+  width: 100%;
   height: 28px;
   padding: 0 1rem;
 }
